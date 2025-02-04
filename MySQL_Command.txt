@@ -1,0 +1,13 @@
+-- Create the database
+CREATE DATABASE PasswordManager;
+
+-- Select the database
+USE PasswordManager;
+
+-- Create the passwords table
+CREATE TABLE passwords (
+    passID INT AUTO_INCREMENT PRIMARY KEY,
+    password VARCHAR(30) NOT NULL,
+    webApplication TEXT NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
